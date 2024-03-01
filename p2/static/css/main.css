@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "h1";
+    src: url("../fonts/Sarabun-Regular.ttf");
+}
+@font-face {
+    font-family: "body";
+    src: url("../fonts/Sarabun-Light.ttf");
+}
+@font-face {
+    font-family: "mono";
+    src: url("../fonts/KodeMono-Regular.ttf");
+}
+
+body {
+  font-family: 'h1';
+  line-height: 1.4;
+  margin: 10%;
+  color: #dbdbdb;
+  background: #202b38;
+  background: linear-gradient(to right bottom, #648880, #223442);
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+.lander {
+    font-size: xxx-large;
+    width: 90%;
+    text-align:right;
+    overflow: hidden;
+  }
+
+.lander h1 {
+    display: inline-block;
+    animation: slide-out-animation 2s forwards;
+  }
+
+@keyframes slide-out-animation {
+    0% {
+      transform: translateX(-80%);
+      opacity: 0;
+    }
+}
+
+.register {
+    width: 90%;
+    text-align: right;
+    font-size: x-large;
+    font-family: "mono";
+}
+
+.lander,.footer{
+    color: #C5CAE9;
+}
