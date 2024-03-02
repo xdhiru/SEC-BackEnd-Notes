@@ -14,10 +14,10 @@
 body {
   font-family: 'h1';
   line-height: 1.4;
-  margin: 10%;
+  margin: 7%;
   color: #dbdbdb;
-  background: #202b38;
   background: linear-gradient(to right bottom, #648880, #223442);
+  background-attachment: fixed;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
@@ -41,13 +41,33 @@ body {
     }
 }
 
-.register {
-    width: 90%;
-    text-align: right;
+.options {
     font-size: x-large;
     font-family: "mono";
 }
 
-.lander,.footer{
-    color: #C5CAE9;
+.header, 
+.footer{
+  font-size: x-large;
+  display: flex;
+}
+
+.options table{
+  display: flex;
+  justify-content:right;
+}
+table{
+  width: 90%;
+}
+table, th, td {
+  font-size: x-large;
+  padding: 13px
+}
+tr:hover {
+  background-color: #222d42;
+}
+
+a{
+  color: inherit;
+  text-decoration:none;
 }

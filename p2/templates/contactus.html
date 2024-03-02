@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %} 
+
+<div class='header'>
+    <h1>Contact Info</h1>
+</div>
+
+<div class='contact_info'>
+    <table>
+        <tr>
+            <th>Phone 1</th>
+            <td>+91 {{phone1}}</td>
+        </tr>
+        <tr>
+            <th>Phone 2</th>
+            <td>+91 {{phone2}}</td>
+        </tr>
+        <tr>
+            <th>E-mail</th>
+            <td>{{email1}}</td>
+        </tr>
+</div>
+
+{% endblock content %}
