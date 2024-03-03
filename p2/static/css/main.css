@@ -1,20 +1,23 @@
 @font-face {
-    font-family: "h1";
+    font-family: "regular";
     src: url("../fonts/Sarabun-Regular.ttf");
 }
 @font-face {
-    font-family: "body";
+    font-family: "light";
     src: url("../fonts/Sarabun-Light.ttf");
 }
 @font-face {
     font-family: "mono";
     src: url("../fonts/KodeMono-Regular.ttf");
 }
+@font-face {
+  font-family: "slab";
+  src: url("../fonts/RobotoSlab-Regular.ttf");
+}
 
 body {
-  font-family: 'h1';
+  font-family: 'regular';
   line-height: 1.4;
-  margin: 7%;
   color: #dbdbdb;
   background: linear-gradient(to right bottom, #648880, #223442);
   background-attachment: fixed;
@@ -24,14 +27,15 @@ body {
 
 .lander {
     font-size: xxx-large;
-    width: 90%;
     text-align:right;
     overflow: hidden;
   }
 
 .lander h1 {
+  margin: 5% 9%;
     display: inline-block;
     animation: slide-out-animation 2s forwards;
+    margin-bottom: 2%;
   }
 
 @keyframes slide-out-animation {
@@ -46,10 +50,27 @@ body {
     font-family: "mono";
 }
 
-.header, 
-.footer{
-  font-size: x-large;
+.flex-wrapper{
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+main{
+  margin: 5% 10%;
+  padding: 10px;
+}
+header, footer{
+  display: flex;
+  justify-content:space-evenly;
+}
+header{
+  margin-top: 0%;
+}
+footer{
+  font-family: 'slab';
+  text-align: center;
+  margin-top: auto;
 }
 
 .options table{
@@ -61,7 +82,7 @@ table{
 }
 table, th, td {
   font-size: x-large;
-  padding: 13px
+  padding: 20px
 }
 tr:hover {
   background-color: #222d42;

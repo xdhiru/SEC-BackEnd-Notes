@@ -5,6 +5,18 @@
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
     </head>
     <body>
-        {% block content %}{% endblock content %}
+        <div class='flex-wrapper'>
+            {% if request.path != '/' and request.path != '/home/' %}
+            <header>
+                {% include "header.html" %}
+            </header>
+            {% endif %}
+            <main>
+                {% block content %}{% endblock content %}
+            </main>
+            <footer>
+                {% include "footer.html" %}
+            </footer>
+        </div>
     </body>
 </html>
