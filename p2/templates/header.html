@@ -1,5 +1,12 @@
+{% load static %}
 {% block header %}
 
-<h1>HEADER</h1>
+
+<nav>
+    <img src="{% static 'img/TRYST.svg' %}" alt="TRYST Logo">
+    <ul>
+        <li><a href="{% url 'home-page' %}">Return Home</a></li>
+    </ul>
+</nav>
 
 {% endblock header %}

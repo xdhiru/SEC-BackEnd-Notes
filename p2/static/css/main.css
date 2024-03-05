@@ -3,6 +3,10 @@
     src: url("../fonts/Sarabun-Regular.ttf");
 }
 @font-face {
+  font-family: "regular-2";
+  src: url("../fonts/HankenGrotesk-Regular.ttf");
+}
+@font-face {
     font-family: "light";
     src: url("../fonts/Sarabun-Light.ttf");
 }
@@ -15,7 +19,10 @@
   src: url("../fonts/RobotoSlab-Regular.ttf");
 }
 
+
 body {
+  margin: 0px;
+  padding: 0px;
   font-family: 'regular';
   line-height: 1.4;
   color: #dbdbdb;
@@ -60,14 +67,30 @@ main{
   margin: 5% 10%;
   padding: 10px;
 }
-header, footer{
-  display: flex;
-  justify-content:space-evenly;
-}
 header{
+  background-color: #1f293c76;
+}
+nav{
+  margin: 7px 10% 10px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img{
   margin-top: 0%;
+  max-width: 15%;
+  height: auto;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px  20px;
 }
 footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
   font-family: 'slab';
   text-align: center;
   margin-top: auto;
