@@ -2,7 +2,40 @@
 
 {% block content %}
 
-<div>haha lol</div>
+<h1>Registration Form</h1>
+<div class="form-container">
+    <form method="POST" action="">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+        
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Phone"><br><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+            <option value="btech">B.Tech</option>
+            <option value="mba">MBA</option>
+            <option value="bca">BCA</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
 
 
 
